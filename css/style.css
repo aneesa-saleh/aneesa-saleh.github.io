@@ -109,7 +109,7 @@ button:active {
 }
 
 #nav-list a:hover {
-  background-color: rgba(255,255,255,0);;
+  background-color: rgba(255,255,255,0);
   color: white;
 }
 
@@ -272,7 +272,6 @@ body{
   font-weight: 580;
   margin: 0px auto;
   display: table;
-  margin-bottom; 10px;
   
 }
 
