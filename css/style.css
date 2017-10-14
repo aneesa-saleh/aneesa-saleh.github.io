@@ -208,7 +208,7 @@ hr{
 
 body, html{
     height:100%;
-    margn:0;
+    margin:0;
     padding:0;
 }
 
@@ -217,7 +217,7 @@ body{
   font-family: 'Quicksand', sans-serif;
   font-weight: 500;
   font-size: 20pt;
-  background-color: #847c6b;
+  background-color: #bab1a0 !important;
   background-image: url('https://res.cloudinary.com/dureqwfrj/image/upload/v1494109287/business-1209705_1920_cfidjg.jpg');
   background-attachment: fixed;
   background-size: cover;
