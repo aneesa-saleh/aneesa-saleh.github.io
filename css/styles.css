@@ -1,0 +1,32 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+ }
+
+.page {
+    height: 100vh;
+    max-height: 100vh;
+}
+
+.page-content {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    column-gap: 50px;
+}
+
+.headshot {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.headshot-image {
+    height: 80%;
+    border-top-right-radius: 150px;
+    border-bottom-left-radius: 150px;
+    width: 90%;
+    object-fit: cover;
+}
