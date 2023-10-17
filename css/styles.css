@@ -102,10 +102,16 @@ h3 {
 }
 
 .text-icon {
-    height: 3em;
+    height: 2em;
     display: flex;
     align-items: center;
     margin-bottom: 4px;
+}
+
+.aspnet-icon {
+    color: #883D9D;
+    font-weight: bold;
+    font-size: 1.5em;
 }
 
 .connect-icon {
