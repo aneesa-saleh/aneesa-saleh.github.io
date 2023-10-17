@@ -21,13 +21,11 @@ h3 {
 }
 
 h3 {
-    margin-bottom: 3px;
-    font-size: 1.3em;
+    margin-bottom: 5px;
+    font-size: 1.3rem;
 }
 
 .page {
-    height: 100vh;
-    max-height: 100vh;
     display: flex;
     justify-content: center;
 }
@@ -37,13 +35,14 @@ h3 {
     max-width: 1100px;
     display: flex;
     justify-content: center;
-    column-gap: 15px;
+    column-gap: 30px;
 }
 
 .headshot {
     height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .headshot-image {
@@ -56,7 +55,7 @@ h3 {
 }
 
 .details {
-    max-width: 60%;
+    max-width: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,26 +65,28 @@ h3 {
 
 .full-name {
     margin-bottom: -20px;
-    font-size: 4em;
+    font-size: 4rem;
     font-weight: 400;
+    white-space: nowrap;
 }
 
 .professional-summary {
     margin: 0;
     font-weight: 400;
     letter-spacing: 2px;
-    font-size: 2em;
+    font-size: 1.53rem;
 }
 
 .horizontal-list {
     display: flex;
     max-width: 100%;
-    overflow: auto;
     padding: 0;
+    justify-content: space-between;
 }
 
 .horizontal-list li {
     list-style-type: none;
+    white-space: nowrap;
 }
 
 .skill-item figure,
@@ -99,28 +100,28 @@ h3 {
 }
 
 .skill-icon {
-    width: 3em;
+    width: 3rem;
 }
 
 .text-icon {
-    height: 2em;
+    height: 3rem;
     display: flex;
     align-items: center;
-    margin-bottom: 4px;
+    margin-bottom: 3px;
 }
 
 .aspnet-icon {
     color: #883D9D;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 .cypress-icon {
-    height: 3em;
+    height: 3rem;
 }
 
 .connect-icon {
-    height: 1.8em;
+    height: 1.8rem;
 }
 
 figcaption,
@@ -136,15 +137,139 @@ a {
     justify-content: space-between;
     margin-top: 8px;
     letter-spacing: normal;
-    max-width: 600px;
+    max-width: 100%;
 }
 
 .skills-intro {
     margin: 0;
-    font-size: 1.1em;
+    font-size: 1.1rem;
 }
 
 .connect-list {
     width: fit-content;
     column-gap: 20px;
+}
+
+@media screen and (max-width: 1100px) {
+    .page-content {
+        width: 90%;
+        column-gap: 5px;
+    }
+
+    .skill-item figure,
+    .figure {
+        margin: 0 10px;
+    }
+
+    .headshot {
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .page {
+        min-height: 100vh;
+        align-items: center;
+    }
+
+    .page-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .headshot {
+        height: fit-content;
+        width: fit-content;
+        margin: 50px 0 0;
+    }
+
+    .headshot-image {
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        object-position: 0 -30px;
+    }
+
+    .details {
+        width: 80%;
+    }
+
+    .full-name {
+        margin-top: 0;
+    }
+
+    .connect {
+        display: flex;
+        justify-content: center;
+    }
+
+    .specialties {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .specialties-list {
+        max-width: 600px;
+        column-gap: 10px;
+    }
+
+    .skill-item:first-child figure {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    html {
+        font-size: 12px;
+    }
+
+    .headshot {
+        margin-top: 20px;
+    }
+
+    .headshot-image {
+        height: 150px;
+        width: 150px;
+    }
+
+    .details {
+        row-gap: 15px;
+        width: 95%;
+    }
+
+    .full-name {
+        font-size: 2.5rem;
+        margin-bottom: -5px;
+    }
+
+    .professional-summary {
+        font-size: 1.3rem;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-list {
+        flex-wrap: wrap;
+        width: 80%;
+        row-gap: 30px;
+    }
+
+    .aspnet-icon {
+        font-size: 1.1rem;
+    }
+
+    .horizontal-list-separator {
+        display: none;
+    }
+
+    .specialties-list {
+        flex-direction: column;
+        row-gap: 5px;
+    }
 }
